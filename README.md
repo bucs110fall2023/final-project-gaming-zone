@@ -6,17 +6,19 @@
 
 ## Team Members
 
-<< List team member names >>
+Saloni Paresh Mahyavanshi
+Athira Unnikrishnan
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+It is a game of tic tac toe. There will be two players. The players will be assigned X or O. Player 1 will be X and player 2 will be O. The players will draw X/O wherever they want on the grid, alternatively. The first to have X/O in 3 consecutive boxes (horizontally, vertically or diagonally) wins.
 
 ***    
 
 ## GUI Design
+
 
 ### Initial Design
 
