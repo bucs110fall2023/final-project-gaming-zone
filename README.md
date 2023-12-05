@@ -6,7 +6,7 @@
 
 ## Team Members
 
-Saloni Paresh Mahyavanshi
+Saloni Paresh Mahyavanshi,
 Athira Unnikrishnan
 
 ***
