@@ -33,15 +33,18 @@ It is a game of tic tac toe. There will be two players. The players will be assi
 
 ### Features
 
-1. Start Menu
-2. Choosing X and O player
-3. 
-4. 
+1. Start Menu 
+2. Instruction Page
+3. Choosing X and O player
+4. Game Board
 5. Game Over and Start Again
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+- Controller
+- Model
+- Main
+
 
 ## ATP
 
@@ -93,3 +96,12 @@ Test Steps:
 
 Expected Outcome: The game should display a "You Win!", "You Lose. Try Again.", or "It's a tie." message when the game ends.
 
+Test Case 5: Error Handling
+
+Test Description: Verify that the program handles unexpected inputs gracefully.
+Test Steps:
+1. Start the game.
+2. Player or computer tries to occupy a already occupied space in the game board.
+3. Verify that the program does not crash and displays appropriate error messages and a restart button.
+
+Expected Outcome: The program should handle unexpected overlaps without crashing and display user-friendly error messages and a restart button.
