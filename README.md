@@ -70,6 +70,19 @@ Test Steps:
 
 Expected Outcome: The display would change when either the player or the computer occupies three spaces in a row vertically, horizontically, or diagonally.
 
+Test Case 3: Choose the shape for the player
+
+Test Description: Saving what shape the player chooses
+
+Test Steps:
+1. Start the game
+2. Press the 'Start Game; button
+3. A page with two options - 'O' and 'X'- will appear.
+4. Player can choose whichever shape they like.
+5. The shape they choose will be saved for them and the other shape is assignemed to the computer by default.
+
+Expected Outcome: When the game starts, and the player clicks a spot to enter their shape, the chosen shape only will be inserted
+
 Test Case 4: Game Over Condition
 
 Test Description: Confirm that the game ends when the player wins, loses, or ties with the computer.
@@ -77,4 +90,6 @@ Test Steps:
 1. Start the game.
 2. Play until either the player or the computer wins.
 3. Verify that the game displays "You Win!", "You Lose. Try Again.", or "It's a tie." message.
+
 Expected Outcome: The game should display a "You Win!", "You Lose. Try Again.", or "It's a tie." message when the game ends.
+
