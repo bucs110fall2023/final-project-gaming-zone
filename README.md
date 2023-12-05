@@ -20,6 +20,7 @@ It is a game of tic tac toe. There will be two players. The players will be assi
 ## GUI Design
 
 
+
 ### Initial Design
 
 ![initial gui](assets/gui.jpg)
@@ -32,11 +33,11 @@ It is a game of tic tac toe. There will be two players. The players will be assi
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Start Menu
+2. Choosing X and O player
+3. 
+4. 
+5. Game Over and Start Again
 
 ### Classes
 
