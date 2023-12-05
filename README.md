@@ -68,3 +68,16 @@ Test Steps:
 4. First the "O" would occupy a space then the "X" would occupy a space. The game would continue until "O"s or "X"s appear three in a row vertically, horizontically, or diagonally.
 5. Verify the game identify's the pattern by making sure the display changes to Game Over page. 
 Expected Outcome: The game should end when either the player or the computer occupies three spaces in a row vertically, horizontically, or diagonally.
+
+Test Case 3: Choose the shape for the player
+
+Test Description: Saving what shape the player chooses
+
+Test Steps:
+1. Start the game
+2. Press the 'Start Game; button
+3. A page with two options - 'O' and 'X'- will appear.
+4. Player can choose whichever shape they like.
+5. The shape they choose will be saved for them and the other shape is assignemed to the computer by default.
+
+Expected Outcome: When the game starts, and the player clicks a spot to enter their shape, the chosen shape only will be inserted
