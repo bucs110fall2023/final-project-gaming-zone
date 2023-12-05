@@ -58,3 +58,13 @@ Test Steps:
 6. 
 Expected Outcome: the next page to show up would be the instructions or the game according to what the player chooses.
 
+Test Case 2: 3 in a Row Pattern
+
+Test Description: Verify that the "O"s are three in a row vertically, horizontically, or diagonally.
+Test Steps:
+1. Start the game.
+2. Press the Start Game button.
+3. Choose "O" or "X"
+4. First the "O" would occupy a space then the "X" would occupy a space. The game would continue until "O"s or "X"s appear three in a row vertically, horizontically, or diagonally.
+5. Verify the game identify's the pattern by making sure the display changes to Game Over page. 
+Expected Outcome: The game should end when either the player or the computer occupies three spaces in a row vertically, horizontically, or diagonally.
