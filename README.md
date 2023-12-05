@@ -45,4 +45,14 @@ It is a game of tic tac toe. There will be two players. The players will be assi
 
 ## ATP
 
+Test Case 1: Player Movement
+
+Test Description: Verify that the player's spaceship moves left and right as expected.
+Test Steps:
+1. Start the game.
+2. Press the left arrow key.
+3. Verify that the player's spaceship moves left.
+4. Press the right arrow key.
+5. Verify that the player's spaceship moves right.
+Expected Outcome: The player's spaceship should move left and right in response to the arrow key inputs.
 
