@@ -15,6 +15,9 @@ class Model:
         self.button2_dark = "deeppink3"
         self.width = self.screen.get_width() 
         self.height = self.screen.get_height()
+        self.grid = [['', '', ''], ['', '', ''], ['', '', '']]
+        self.player_turn = 'X'
+        self.winner = None
 
     def start_game_button (self, light_color, dark_color, fav_pos = 0, text = "Start Game"):
 
@@ -55,10 +58,7 @@ class Model:
                     return False
         return True\
         
-    def __init__(self):
-        self.grid = [['', '', ''], ['', '', ''], ['', '', '']]
-        self.player_turn = 'X'
-        self.winner = None
+      
     def make_move(self, rows, columns):
         if self.grid[rows][columns] == '' and not self.winner:
             self.grid[rows][columns] = self.player_turn
