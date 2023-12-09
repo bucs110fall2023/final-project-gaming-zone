@@ -68,16 +68,18 @@ class Model:
         """
         to check the winner
         arg: None
+        returns: in terminal, a string confirming a winner
         """
         for i in range(3):
             if self.grid[i][0] == self.grid[i][1] == self.grid[i][2] !='':
                 self.winner = self.grid[i][0]
             if self.grid[0][i] == self.grid[1][i] == self.grid[2][i] !='':
                 self.winner = self.grid[0][i]
-        if self.grid[0][0] == self.grid[1][1] == self.grid[2][2] != '':
-            self.winner = self.grid[0][0]
-        if self.grid[0][2] == self.grid[1][1] == self.grid[2][0] != '':
-            self.winner = self.grid[0][2]
+            if self.grid[0][0] == self.grid[1][1] == self.grid[2][2] != '':
+                self.winner = self.grid[0][0]
+            if self.grid[0][2] == self.grid[1][1] == self.grid[2][0] != '':
+                self.winner = self.grid[0][2]
+            print("There is a winner!)
     def switch_player(self):
         """
         to switch between players alternatively
