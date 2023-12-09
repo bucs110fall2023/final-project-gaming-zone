@@ -50,7 +50,7 @@ It is a game of tic tac toe. There will be two players. The players will be assi
 
 Test Case 1: Tic Tac Toe
 
-Test Description: Verify that the next page to show up would be the instructions or the game according to what the player chooses.
+Test Description: Verify that the next page to show up would be the instructions or the game according to what the players choose.
 
 Test Steps:
 1. Start the game.
@@ -68,40 +68,40 @@ Test Description: Verify that the "O"s are three in a row vertically, horizontic
 Test Steps:
 1. Start the game.
 2. Choose "O" or "X"
-3. First the player would occupy a space then the computer would occupy a space. The game would continue until "O"s or "X"s appear three in a row vertically, horizontically, or diagonally.
+3. First the player 1 would occupy a space then the player 2 would occupy a space. The game would continue until "O"s or "X"s appear three in a row vertically, horizontically, or diagonally.
 4. Verify the game identify's the pattern by making sure the display changes to Game Over page. 
 
-Expected Outcome: The display would change when either the player or the computer occupies three spaces in a row vertically, horizontically, or diagonally.
+Expected Outcome: The display would change when either the player 1 or the player 2 occupies three spaces in a row vertically, horizontically, or diagonally.
 
 Test Case 3: Choose the shape for the player
 
-Test Description: Saving what shape the player chooses
+Test Description: Saving what shape the players choose
 
 Test Steps:
 1. Start the game
 2. Press the 'Start Game; button
 3. A page with two options - 'O' and 'X'- will appear.
-4. Player can choose whichever shape they like.
-5. The shape they choose will be saved for them and the other shape is assignemed to the computer by default.
+4. Players can choose whichever shape they like.
+5. The shape they choose will be saved for them.
 
 Expected Outcome: When the game starts, and the player clicks a spot to enter their shape, the chosen shape only will be inserted
 
 Test Case 4: Game Over Condition
 
-Test Description: Confirm that the game ends when the player wins, loses, or ties with the computer.
+Test Description: Confirm that the game ends when the player 1 wins, loses, or ties with the player 2.
 Test Steps:
 1. Start the game.
-2. Play until either the player or the computer wins.
-3. Verify that the game displays "You Win!", "You Lose. Try Again.", or "It's a tie." message.
+2. Play until either the player 1 or the player 2 wins.
+3. Verify that the game displays "player 2 Wins!", "player 2 Loses. Try Again.", or "It's a tie." message.
 
-Expected Outcome: The game should display a "You Win!", "You Lose. Try Again.", or "It's a tie." message when the game ends.
+Expected Outcome: The game should display a "player 2 Wins!", "player 2 Loses. Try Again.", or "It's a tie." message when the game ends.
 
 Test Case 5: Error Handling
 
 Test Description: Verify that the program handles unexpected inputs gracefully.
 Test Steps:
 1. Start the game.
-2. Player or computer tries to occupy a already occupied space in the game board.
+2. Player 1 or player 2 tries to occupy a already occupied space in the game board.
 3. Verify that the program does not crash and displays appropriate error messages and a restart button.
 
 Expected Outcome: The program should handle unexpected overlaps without crashing and display user-friendly error messages and a restart button.
