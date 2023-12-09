@@ -47,6 +47,37 @@ class Model:
                     pygame.quit()
                     return False
         return True\
+        
+    def __init__(self):
+        self.grid = [['', '', ''], ['', '', ''], ['', '', '']]
+        self.player_turn = 'X'
+        self.winner = None
+    def make_move(self, rows, columns):
+        if self.grid[rows][columns] == '' and not self.winner:
+            self.grid[rows][columns] = self.player_turn
+            self.check_winner()
+            self.switch_player()
+    def check_winner(self):
+        for i in range(3):
+            if self.grid[i][0] == self.grid[i][1] == self.grid[i][2] !='':
+                self.winner = self.grid[i][0]
+            if self.grid[0][i] == self.grid[1][i] == self.grid[2][i] !='':
+                self.winner = self.grid[0][i]
+        if self.grid[0][0] == self.grid[1][1] == self.grid[2][2] != '':
+            self.winner = self.grid[0][0]
+        if self.grid[0][2] == self.grid[1][1] == self.grid[2][0] != '':
+            self.winner = self.grid[0][2]
+    def switch_player(self):
+        self.player_turn = 'O' if self.player_turn == 'X' else 'X'
+    def is_grid_full(self):
+        for row in self.grid:
+            if '' in row:
+                return False
+                return True
+    def reset_game(self):
+        self.grid = [['', '', ''], ['', '', ''], ['', '', '']]
+        self.player_turn = 'X'
+        self.winner = None
 
     def draw_grid(self, model):
         for i in range(1, 3):
