@@ -17,6 +17,13 @@ class Model:
         self.height = self.screen.get_height()
 
     def start_game_button (self, light_color, dark_color, fav_pos = 0, text = "Start Game"):
+
+        """
+       coding the buttons that will be used in the game
+       arg: color, text, position
+       return:none
+       """
+        
         self.text = self.smallfont.render(text , True , self.color)
         self.light_color = light_color
         self.dark_color = dark_color
