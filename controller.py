@@ -51,10 +51,13 @@ class Controller:
                         pygame.display.flip()
                     elif button2.is_clicked(mouse):
                         pygame.display.flip()
-                        display_instructions()
+                        Controller.display_instructions()
                         pass
 
         pygame.display.flip()
+    def tic_tac_toe(self):
+        Model.draw_grid()
+        
     pygame.quit()
 
     

@@ -48,7 +48,7 @@ class Model:
                     return False
         return True\
 
-    def draw_board(self, model):
+    def draw_grid(self, model):
         for i in range(1, 3):
             pygame.draw.line(self.screen, self.border_color, (i * self.width// 3, 0), (i * self.width // 3, self.height), self.border_width)
             pygame.draw.line(self.screen, self.border_color, (0, i *self.height // 3), (self.width, i * self.height // 3),self.border_width)
