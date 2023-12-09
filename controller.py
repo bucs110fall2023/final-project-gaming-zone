@@ -50,7 +50,7 @@ def display_instructions(self):
         "5. Have fun!"
         ]
     for i, line in enumerate(instructions):
-        text = self.instructions_font.render(line, True, self.LINE_COLOR)
+        text = self.instructions_font.render(line, True, self.border_color)
         self.screen.blit(text, (20, 20 + i * 25))
         #2. detect collisions and update models
 
