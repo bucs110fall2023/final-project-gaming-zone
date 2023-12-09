@@ -92,7 +92,7 @@ Test Description: Confirm that the game ends when the player 1 wins, loses, or t
 Test Steps:
 1. Start the game.
 2. Play until either the player 1 or the player 2 wins.
-3. Verify that the game displays "player 2 Wins!", "player 2 Loses. Try Again.", or "It's a tie." message.
+3. Verify that the code that checks the conditions for winning works.
 
 Expected Outcome: The game should display a "player 2 Wins!", "player 2 Loses. Try Again.", or "It's a tie." message when the game ends.
 
@@ -105,3 +105,7 @@ Test Steps:
 3. Verify that the program does not crash and displays appropriate error messages and a restart button.
 
 Expected Outcome: The program should handle unexpected overlaps without crashing and display user-friendly error messages and a restart button.
+
+Things to Know:
+1) Part of the code that involves debugging dissapeared due to mearging conflicts.
+2) The screen refuses to show up, a black screen for a few seconds.
