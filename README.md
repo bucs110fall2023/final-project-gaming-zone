@@ -92,9 +92,9 @@ Test Description: Confirm that the game ends when the player 1 wins, loses, or t
 Test Steps:
 1. Start the game.
 2. Play until either the player 1 or the player 2 wins.
-3. Verify that the code that checks the conditions for winning works.
+3. Verify that the code that checks the conditions for a win by printing a string confirming a win.
 
-Expected Outcome: The game should display a "player 2 Wins!", "player 2 Loses. Try Again.", or "It's a tie." message when the game ends.
+Expected Outcome: The terminal will have a "We have a winner!" desplayed on it.
 
 Test Case 5: Error Handling
 
