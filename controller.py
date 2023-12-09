@@ -6,6 +6,8 @@ class Controller:
         self.screen_size = (720,720)
         self.screen = pygame.display.set_mode(self.screen_size)
         pygame.display.set_caption("Tic Tac Toe")
+        self.LINE_COLOR = "purple"
+        self.instructions_font = pygame.font.Font(None,40)
 
     def mainloop(self):
         while True: #this can also be a variable instead of just True
@@ -14,6 +16,20 @@ class Controller:
                if event.type == pygame.QUIT:
                    pygame.quit()
                    exit()   
+
+    def display_instructions(self):
+        instructions = [
+            "Tic Tac Toe Instructions:",
+            "1. Players take turns to place their 'X' or 'O' on the board.",
+            "2. The first player to get three in a row (horizontally, vertically, or diagonally) wins.",
+            "3. If the board is full and no player has won, the game is a draw.",
+            "4. Click 'Start New Game' to reset the board and start a new game.",
+            "5. Have fun!"
+            ]
+        for i, line in enumerate(instructions):
+            text = self.instructions_font.render(line, True, self.LINE_COLOR)
+            self.screen.blit(text, (20, 20 + i * 25))
+
     
     def startmenu(self):
         pygame.init()
@@ -34,29 +50,14 @@ class Controller:
                         choose_player()
                         pygame.display.flip()
                     elif button2.is_clicked(mouse):
-                        information()
+                        pygame.display.flip()
+                        display_instructions()
                         pass
 
         pygame.display.flip()
     pygame.quit()
 
-def display_instructions(self):
-    instructions = [
-        "Tic Tac Toe Instructions:",
-        "1. Players take turns to place their 'X' or 'O' on the board.",
-        "2. The first player to get three in a row (horizontally, vertically, or diagonally) wins.",
-        "3. If the board is full and no player has won, the game is a draw.",
-        "4. Click 'Start New Game' to reset the board and start a new game.",
-        "5. Have fun!"
-        ]
-    for i, line in enumerate(instructions):
-        text = self.instructions_font.render(line, True, self.border_color)
-        self.screen.blit(text, (20, 20 + i * 25))
-        #2. detect collisions and update models
-
-        #3. Redraw next frame
-
-        #4. Display next frame
+    
 
 
 
