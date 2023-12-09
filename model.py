@@ -24,7 +24,7 @@ class Model:
         """
        coding the buttons that will be used in the game
        arg: color, text, position
-       return:none
+       returns a button
        """
         
         self.text = self.smallfont.render(text , True , self.color)
@@ -96,6 +96,7 @@ class Model:
         """
         to draw the grid for the tic tac toe
         arg: width, height, color
+        returns a grid
         """
         
         for i in range(1, 3):
