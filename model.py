@@ -67,6 +67,7 @@ class Model:
     def check_winner(self):
         """
         to check the winner
+        arg: None
         """
         for i in range(3):
             if self.grid[i][0] == self.grid[i][1] == self.grid[i][2] !='':
@@ -80,6 +81,7 @@ class Model:
     def switch_player(self):
         """
         to switch between players alternatively
+        arg: None
         """
         self.player_turn = 'O' if self.player_turn == 'X' else 'X'
     def is_grid_full(self):
