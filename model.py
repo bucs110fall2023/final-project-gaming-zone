@@ -65,6 +65,9 @@ class Model:
             self.check_winner()
             self.switch_player()
     def check_winner(self):
+        """
+        to check the winner
+        """
         for i in range(3):
             if self.grid[i][0] == self.grid[i][1] == self.grid[i][2] !='':
                 self.winner = self.grid[i][0]
@@ -75,6 +78,9 @@ class Model:
         if self.grid[0][2] == self.grid[1][1] == self.grid[2][0] != '':
             self.winner = self.grid[0][2]
     def switch_player(self):
+        """
+        to switch between players alternatively
+        """
         self.player_turn = 'O' if self.player_turn == 'X' else 'X'
     def is_grid_full(self):
         for row in self.grid:
@@ -87,6 +93,11 @@ class Model:
         self.winner = None
 
     def draw_grid(self, model):
+        """
+        to draw the grid for the tic tac toe
+        arg: width, height, color
+        """
+        
         for i in range(1, 3):
             pygame.draw.line(self.screen, self.border_color, (i * self.width// 3, 0), (i * self.width // 3, self.height), self.border_width)
             pygame.draw.line(self.screen, self.border_color, (0, i *self.height // 3), (self.width, i * self.height // 3),self.border_width)
