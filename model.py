@@ -54,12 +54,12 @@ class Model:
             pygame.draw.line(self.screen, self.border_color, (0, i *self.height // 3), (self.width, i * self.height // 3),self.border_width)
             for rows in range(3):
                 for column in range(3):
-                    if model.board[rows][column] == 'X':
+                    if model.grid[rows][column] == 'X':
                         x_pos = column * self.width // 3 + self.width // 6
                         y_pos = rows * self.height // 3 + self.height // 6
                         pygame.draw.line(self.screen, self.border_color, (x_pos - 50, y_pos - 50), (x_pos + 50, y_pos + 50),self.border_width)
                         pygame.draw.line(self.screen, self.border_color, (x_pos+ 50, y_pos - 50), (x_pos - 50, y_pos + 50),self.border_width)
-                    elif model.board[rows][column] == 'O':
+                    elif model.grid[rows][column] == 'O':
                         x_pos = column * self.width// 3 + self.width// 6
                         y_pos = rows * self.height // 3 + self.height // 6
                         pygame.draw.circle(self.screen, self.border_color,(x_pos, y_pos), 50, self.border_width)
